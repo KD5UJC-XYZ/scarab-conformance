@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "scenario": "uplc-turbo",
+  "era": null,
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "6ea35198b29bb0bc291c5a68c6f923fcf8d6d0cd",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.plutus.ndc.UplcTurboMain",
+    "arguments": [
+      "scarab",
+      "/inputs/uplc-turbo-corpus-821af55e3323",
+      "/out/report.json"
+    ],
+    "jvm": [
+      "-Xms4g",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "plutus_vm": "scarab",
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "uplc-turbo-corpus",
+      "kind": "tarball",
+      "url": "https://pub-2239d82d9a074482b2eb2c886191cb4e.r2.dev/turbo.tar.zst",
+      "sha256": "821af55e3323c826b5598c964d634b46dd468014834d0e97ebdc5edb0a158576"
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:conformance",
+    "image_id": "sha256:726dfb5f14bb08932180ba9bcad1e110261c3cf7cd0c3c0cad0a4b780ac9c61d",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.5.1",
+    "python": "3.12.3",
+    "runner": "local"
+  },
+  "timings_seconds": {
+    "build": 131.2,
+    "fetch": 1.8,
+    "run": 62.9
+  },
+  "started_at": "2026-11-15T00:40:39Z",
+  "finished_at": "2026-11-15T00:41:44Z",
+  "validation": {
+    "schema": "scenarios/uplc-turbo/schema.json",
+    "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 3992,
+    "valid": true
+  },
+  "report": "scarab-20261115-uplc-turbo.json.gz",
+  "sha256": "6463013ac0134f0dc896a55fa0502b2e788841b11c01460200d9009783857a74",
+  "bytes": 341086,
+  "json_sha256": "b44579584820ab7e16f9072da9c9bd7bad2238d84c7d6d22a09c3af9168d7fb5",
+  "generated_at": "2026-11-15T00:41:44.109809Z"
+}
