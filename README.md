@@ -14,4 +14,6 @@ also writes this file: do not edit it by hand. The Plutus scenarios report Scara
 
 | Report | Date (UTC) | Scarab commit | sha256 of the file |
 |---|---|---|---|
+| [`ledger-rules`](latest/ledger-rules.json.gz) | 2026-11-15 | [`15cb6528b`](https://github.com/KD5UJC-XYZ/scarab/commit/15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248) | `a4694392891b43e2` |
+| [`uplc-conformance`](latest/uplc-conformance.json.gz) | 2026-11-15 | [`15cb6528b`](https://github.com/KD5UJC-XYZ/scarab/commit/15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248) | `d8137bc83de59eae` |
 | [`uplc-turbo`](latest/uplc-turbo.json.gz) | 2026-11-15 | [`6ea35198b`](https://github.com/KD5UJC-XYZ/scarab/commit/6ea35198b29bb0bc291c5a68c6f923fcf8d6d0cd) | `6463013ac0134f0d` |

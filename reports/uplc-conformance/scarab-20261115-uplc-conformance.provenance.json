@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "scenario": "uplc-conformance",
+  "era": null,
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.plutus.ndc.UplcConformanceMain",
+    "arguments": [
+      "scarab",
+      "/inputs/uplc-conformance-corpus-8bd4ad4f9f4c",
+      "/inputs/site-9dc68a750478/scenarios/uplc-conformance/expectations.json",
+      "/out/report.json"
+    ],
+    "jvm": [
+      "-Xss8m",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "plutus_vm": "scarab",
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "uplc-conformance-corpus",
+      "kind": "tarball",
+      "url": "https://pub-2239d82d9a074482b2eb2c886191cb4e.r2.dev/uplc-conformance.tar.zst",
+      "sha256": "8bd4ad4f9f4c8c6b8ffa1f06ed1db0b43043afbba77ef6a14bcfb5a52345ed3f"
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:e63eed6806fd795cd8b3d08caafcf30b4a17bcf5d495bc54c0be8310c03af294",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions"
+  },
+  "timings_seconds": {
+    "build": 229.7,
+    "fetch": 1.2,
+    "run": 2.7
+  },
+  "started_at": "2026-11-15T02:39:27Z",
+  "finished_at": "2026-11-15T02:39:31Z",
+  "validation": {
+    "schema": "scenarios/uplc-conformance/schema.json",
+    "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 1064,
+    "valid": true
+  },
+  "report": "scarab-20261115-uplc-conformance.json.gz",
+  "sha256": "d8137bc83de59eaedc5ec63e23282a457a61b34aa858ff40c7280ad65d032faa",
+  "bytes": 23261,
+  "json_sha256": "886dda00daf98a6800de2e44d0d367847902346eec107f757b29752f04f7e04e",
+  "generated_at": "2026-11-15T02:39:31.292811Z"
+}
