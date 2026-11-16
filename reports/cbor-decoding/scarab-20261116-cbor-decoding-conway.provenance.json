@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "scenario": "cbor-decoding",
+  "era": "conway",
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "2d837171de3676d940b37ad88b2670f692c39894",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.ledger.conformance.CborDatasetMain",
+    "arguments": [
+      "/inputs/cbor-dataset-ed6c49a4e273/dataset/conway",
+      "conway",
+      "ed6c49a4e273bb540a26c46d61c011974d0192f6",
+      "2d837171de3676d940b37ad88b2670f692c39894",
+      "/out/report-conway.json"
+    ],
+    "jvm": [
+      "-Xss8m",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "plutus_vm": null,
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "cbor-dataset",
+      "kind": "git",
+      "repository": "r2rationality/cardano-cbor-dataset",
+      "commit": "ed6c49a4e273bb540a26c46d61c011974d0192f6",
+      "paths": [
+        "dataset/conway",
+        "dataset/dijkstra",
+        "dataset/normalization"
+      ]
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:bfbd354fb5104862c61c6f03aa762be1b504eb071c4d335cf1125865dc0dc7dc",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions"
+  },
+  "timings_seconds": {
+    "build": 325.2,
+    "fetch": 21.2,
+    "run": 12.8
+  },
+  "started_at": "2026-11-16T00:40:47Z",
+  "finished_at": "2026-11-16T00:41:21Z",
+  "validation": {
+    "schema": "scenarios/cbor-decoding/schema.json",
+    "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 43434,
+    "valid": true
+  },
+  "report": "scarab-20261116-cbor-decoding-conway.json.gz",
+  "sha256": "4b8d2b660f3e5047ca79d76f6d267d6c8eba7f3b74295c7b537de7189cb8971f",
+  "bytes": 575367,
+  "json_sha256": "c126f13450c824b4c4165de459f926a77ee723e939400d8b100968a9614f3c1c",
+  "generated_at": 1794789680901
+}

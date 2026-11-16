@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "scenario": "cbor-decoding",
+  "era": "dijkstra",
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "2d837171de3676d940b37ad88b2670f692c39894",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.ledger.conformance.CborDatasetMain",
+    "arguments": [
+      "/inputs/cbor-dataset-ed6c49a4e273/dataset/dijkstra",
+      "dijkstra",
+      "ed6c49a4e273bb540a26c46d61c011974d0192f6",
+      "2d837171de3676d940b37ad88b2670f692c39894",
+      "/out/report-dijkstra.json"
+    ],
+    "jvm": [
+      "-Xss8m",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "plutus_vm": null,
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "cbor-dataset",
+      "kind": "git",
+      "repository": "r2rationality/cardano-cbor-dataset",
+      "commit": "ed6c49a4e273bb540a26c46d61c011974d0192f6",
+      "paths": [
+        "dataset/conway",
+        "dataset/dijkstra",
+        "dataset/normalization"
+      ]
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:bfbd354fb5104862c61c6f03aa762be1b504eb071c4d335cf1125865dc0dc7dc",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions"
+  },
+  "timings_seconds": {
+    "build": 325.2,
+    "fetch": 21.2,
+    "run": 6.1
+  },
+  "started_at": "2026-11-16T00:40:47Z",
+  "finished_at": "2026-11-16T00:41:29Z",
+  "validation": {
+    "schema": "scenarios/cbor-decoding/schema.json",
+    "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 40437,
+    "valid": true
+  },
+  "report": "scarab-20261116-cbor-decoding-dijkstra.json.gz",
+  "sha256": "5102d101b8d16d5b30c27805365bd0351f87b587a127fab662c29b7e95bacc4b",
+  "bytes": 538422,
+  "json_sha256": "c89037222b72b6fe983a49310f9844746ac84eae8a6b4780f3aa8267d09b4292",
+  "generated_at": 1794789689171
+}

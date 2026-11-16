@@ -4,7 +4,7 @@
   "era": "conway",
   "scarab": {
     "repository": "KD5UJC-XYZ/scarab",
-    "commit": "82dbb87b44c15c8baf2dcf8792e7035bdc516440",
+    "commit": "2d837171de3676d940b37ad88b2670f692c39894",
     "dirty": false
   },
   "tool": {
@@ -13,7 +13,7 @@
       "/inputs/cbor-dataset-ed6c49a4e273/dataset/conway",
       "conway",
       "ed6c49a4e273bb540a26c46d61c011974d0192f6",
-      "82dbb87b44c15c8baf2dcf8792e7035bdc516440",
+      "2d837171de3676d940b37ad88b2670f692c39894",
       "/out/report-conway.json"
     ],
     "jvm": [
@@ -49,19 +49,19 @@
   ],
   "environment": {
     "image": "scarab-jdk:local",
-    "image_id": "sha256:5ce629f14cb284c199ebe31fd50870bece38f80a5da83a68e260ef8be5283a86",
+    "image_id": "sha256:bfbd354fb5104862c61c6f03aa762be1b504eb071c4d335cf1125865dc0dc7dc",
     "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
     "docker": "28.0.4",
     "python": "3.12.3",
     "runner": "github-actions"
   },
   "timings_seconds": {
-    "build": 315.3,
-    "fetch": 24.3,
-    "run": 12.1
+    "build": 325.2,
+    "fetch": 21.2,
+    "run": 12.8
   },
-  "started_at": "2026-11-15T03:28:33Z",
-  "finished_at": "2026-11-15T03:29:09Z",
+  "started_at": "2026-11-16T00:40:47Z",
+  "finished_at": "2026-11-16T00:41:21Z",
   "validation": {
     "schema": "scenarios/cbor-decoding/schema.json",
     "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
@@ -70,9 +70,9 @@
     "entries": 43434,
     "valid": true
   },
-  "report": "scarab-20261115-cbor-decoding-conway.json.gz",
-  "sha256": "a5bbabefddce86f70cd9f1033ccb0e8958a3e2b19150b5204621265f0b8ee0ea",
-  "bytes": 576517,
-  "json_sha256": "efc67cc297b45dfcbad82a2074debd601a2ff6923d20006b9f448af17f92468e",
-  "generated_at": 1794713349638
+  "report": "scarab-20261116-cbor-decoding-conway.json.gz",
+  "sha256": "4b8d2b660f3e5047ca79d76f6d267d6c8eba7f3b74295c7b537de7189cb8971f",
+  "bytes": 575367,
+  "json_sha256": "c126f13450c824b4c4165de459f926a77ee723e939400d8b100968a9614f3c1c",
+  "generated_at": 1794789680901
 }
