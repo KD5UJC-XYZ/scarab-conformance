@@ -3,8 +3,7 @@
 Generated reports of [Scarab](https://github.com/KD5UJC-XYZ/scarab), a Cardano node in Scala, for pragma-org's
 [node-diversity-conformance](https://pragma-org.github.io/node-diversity-conformance/) site. They are written by `scripts/conformance/run.py` and published on
 demand by `scripts/conformance/publish.py` of the Scarab repository (`docs/running/conformance.md` there), which
-also writes this file: do not edit it by hand. The Plutus scenarios report Scarab's own evaluator
-(`--plutus-vm scarab`).
+also writes this file: do not edit it by hand. Scarab's Plutus evaluator is its own (`uplc`).
 
 - `latest/<scenario>[-<era>].json.gz`: the newest report of each scenario and era, which the site reads from
   `https://raw.githubusercontent.com/KD5UJC-XYZ/scarab-conformance/main/latest/`, with its `.provenance.json` beside it.
@@ -23,12 +22,12 @@ Ratios are shown as the site shows them, cut to two decimals.
 
 | Scenario | Met | Total | Ratio | Scored |
 |---|--:|--:|--:|---|
-| `cbor-decoding`, Conway | 43,276 | 43,434 | 99.63% | yes |
-| `cbor-decoding`, Dijkstra | 34,049 | 40,437 | 84.20% | no |
+| `cbor-decoding`, Conway | 43,313 | 43,434 | 99.72% | yes |
+| `cbor-decoding`, Dijkstra | 39,309 | 40,437 | 97.21% | no |
 | `ledger-rules` | 368 | 368 | 100% | yes |
 | `uplc-conformance` | 1,063 | 1,064 | 99.90% | yes |
 | `uplc-turbo` | 3,660 | 3,997 | 91.56% | yes |
-| **Overall** | | | **97.77%** | |
+| **Overall** | | | **97.79%** | |
 
 - `cbor-decoding`: a sample is met when it decodes as the dataset expects.
   The site scores a node by its Conway report, or by another era's when it has no Conway report it can read.
@@ -46,8 +45,8 @@ Ratios are shown as the site shows them, cut to two decimals.
 
 | Report | Date (UTC) | Scarab commit | sha256 of the file |
 |---|---|---|---|
-| [`cbor-decoding-conway`](latest/cbor-decoding-conway.json.gz) | 2026-11-16 | [`2d837171d`](https://github.com/KD5UJC-XYZ/scarab/commit/2d837171de3676d940b37ad88b2670f692c39894) | `4b8d2b660f3e5047` |
-| [`cbor-decoding-dijkstra`](latest/cbor-decoding-dijkstra.json.gz) | 2026-11-16 | [`2d837171d`](https://github.com/KD5UJC-XYZ/scarab/commit/2d837171de3676d940b37ad88b2670f692c39894) | `5102d101b8d16d5b` |
+| [`cbor-decoding-conway`](latest/cbor-decoding-conway.json.gz) | 2026-11-24 | [`7abac10c7`](https://github.com/KD5UJC-XYZ/scarab/commit/7abac10c72e9beae82b9273a74466d826deb87f0) | `4cbdb4c831e0e567` |
+| [`cbor-decoding-dijkstra`](latest/cbor-decoding-dijkstra.json.gz) | 2026-11-24 | [`7abac10c7`](https://github.com/KD5UJC-XYZ/scarab/commit/7abac10c72e9beae82b9273a74466d826deb87f0) | `2432489d381e3a45` |
 | [`ledger-rules`](latest/ledger-rules.json.gz) | 2026-11-15 | [`15cb6528b`](https://github.com/KD5UJC-XYZ/scarab/commit/15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248) | `a4694392891b43e2` |
 | [`uplc-conformance`](latest/uplc-conformance.json.gz) | 2026-11-15 | [`15cb6528b`](https://github.com/KD5UJC-XYZ/scarab/commit/15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248) | `d8137bc83de59eae` |
 | [`uplc-turbo`](latest/uplc-turbo.json.gz) | 2026-11-15 | [`6ea35198b`](https://github.com/KD5UJC-XYZ/scarab/commit/6ea35198b29bb0bc291c5a68c6f923fcf8d6d0cd) | `6463013ac0134f0d` |

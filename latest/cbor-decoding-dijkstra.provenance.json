@@ -4,7 +4,7 @@
   "era": "dijkstra",
   "scarab": {
     "repository": "KD5UJC-XYZ/scarab",
-    "commit": "2d837171de3676d940b37ad88b2670f692c39894",
+    "commit": "7abac10c72e9beae82b9273a74466d826deb87f0",
     "dirty": false
   },
   "tool": {
@@ -13,7 +13,7 @@
       "/inputs/cbor-dataset-ed6c49a4e273/dataset/dijkstra",
       "dijkstra",
       "ed6c49a4e273bb540a26c46d61c011974d0192f6",
-      "2d837171de3676d940b37ad88b2670f692c39894",
+      "7abac10c72e9beae82b9273a74466d826deb87f0",
       "/out/report-dijkstra.json"
     ],
     "jvm": [
@@ -22,7 +22,6 @@
       "--enable-native-access=ALL-UNNAMED",
       "--sun-misc-unsafe-memory-access=allow"
     ],
-    "plutus_vm": null,
     "exit_status": 0
   },
   "inputs": [
@@ -49,19 +48,19 @@
   ],
   "environment": {
     "image": "scarab-jdk:local",
-    "image_id": "sha256:bfbd354fb5104862c61c6f03aa762be1b504eb071c4d335cf1125865dc0dc7dc",
+    "image_id": "sha256:82c6874de7ad69391b6bb8f5cd76bf7d43094980e9f33eacbdbfb570ba675860",
     "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
     "docker": "28.0.4",
     "python": "3.12.3",
     "runner": "github-actions"
   },
   "timings_seconds": {
-    "build": 325.2,
-    "fetch": 21.2,
-    "run": 6.1
+    "build": 323.5,
+    "fetch": 20.0,
+    "run": 5.5
   },
-  "started_at": "2026-11-16T00:40:47Z",
-  "finished_at": "2026-11-16T00:41:29Z",
+  "started_at": "2026-11-24T16:07:50Z",
+  "finished_at": "2026-11-24T16:08:28Z",
   "validation": {
     "schema": "scenarios/cbor-decoding/schema.json",
     "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
@@ -70,9 +69,9 @@
     "entries": 40437,
     "valid": true
   },
-  "report": "scarab-20261116-cbor-decoding-dijkstra.json.gz",
-  "sha256": "5102d101b8d16d5b30c27805365bd0351f87b587a127fab662c29b7e95bacc4b",
-  "bytes": 538422,
-  "json_sha256": "c89037222b72b6fe983a49310f9844746ac84eae8a6b4780f3aa8267d09b4292",
-  "generated_at": 1794789689171
+  "report": "scarab-20261124-cbor-decoding-dijkstra.json.gz",
+  "sha256": "2432489d381e3a45aa4e4078ebbae11bc4ef04b21256d041d4c9ab66fe1cd989",
+  "bytes": 534705,
+  "json_sha256": "9a0b0355a00bdf6ec2aec89df55b432f5275c00fa968a3885552ddcf631f16bd",
+  "generated_at": 1795536508203
 }
