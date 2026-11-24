@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "scenario": "uplc-conformance",
+  "era": null,
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "929f794a6c76d8c3082ab6e86d56ce3b3144c447",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.plutus.ndc.UplcConformanceMain",
+    "arguments": [
+      "/inputs/uplc-conformance-corpus-8bd4ad4f9f4c",
+      "/inputs/site-628006278309/scenarios/uplc-conformance/expectations.json",
+      "/out/report.json"
+    ],
+    "jvm": [
+      "-Xss8m",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "uplc-conformance-corpus",
+      "kind": "tarball",
+      "url": "https://pub-2239d82d9a074482b2eb2c886191cb4e.r2.dev/uplc-conformance.tar.zst",
+      "sha256": "8bd4ad4f9f4c8c6b8ffa1f06ed1db0b43043afbba77ef6a14bcfb5a52345ed3f"
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:31f7b846bfe3a26965b12343250be449102936b7b14b97f25206e36fcc34886b",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions"
+  },
+  "timings_seconds": {
+    "build": 448.9,
+    "fetch": 1.5,
+    "run": 4.1
+  },
+  "started_at": "2026-11-24T20:21:33Z",
+  "finished_at": "2026-11-24T20:21:38Z",
+  "validation": {
+    "schema": "scenarios/uplc-conformance/schema.json",
+    "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 1064,
+    "valid": true
+  },
+  "report": "scarab-20261124-uplc-conformance.json.gz",
+  "sha256": "e9fd4cc8fa2082aaa1a03de296faa7165c7bb0ab027fe0d0c399899a177e6925",
+  "bytes": 23249,
+  "json_sha256": "f2fa15589dab45515832bbc5f430197606efcddce1b868a5300a820f0d777669",
+  "generated_at": "2026-11-24T20:21:38.577552Z"
+}

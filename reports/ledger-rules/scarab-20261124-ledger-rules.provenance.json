@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "scenario": "ledger-rules",
+  "era": null,
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "929f794a6c76d8c3082ab6e86d56ce3b3144c447",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.ledger.LedgerRulesMain",
+    "arguments": [
+      "/inputs/site-628006278309/scenarios/ledger-rules/fixtures/scenarios",
+      "/inputs/ledger-rules-documents-40ba995081b2",
+      "/out/report.json",
+      "--sidecar",
+      "/out/sidecar.json",
+      "--dataset-commit",
+      "40ba995081b2b066cab497eade9abfbc0e350970"
+    ],
+    "jvm": [
+      "-Xss8m",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "ledger-rules-documents",
+      "kind": "files",
+      "repository": "pragma-org/amaru",
+      "commit": "40ba995081b2b066cab497eade9abfbc0e350970",
+      "root": "crates/amaru-ledger/tests/data/transaction",
+      "files": {
+        "common/era-history/preprod-conway.json": "cdc28dc4cc8a33d30b82bb0191fa2dc74f40c39742d74c274a5093da9e103af3",
+        "common/protocol-parameters/preprod-287.json": "10ae2e7241772b116160be711c62fa9bec4559f21395030ec38d3b82a8402b50",
+        "common/protocol-parameters/preprod-conway-v10-no-v3-cost-models.json": "1bd993bac8ac2c9163bebccffd4343b372d2800fdf1986fa0654ce7e4cdcd59c",
+        "common/protocol-parameters/preprod-conway-v10-zero-cost-models.json": "b7939a6ed1681c77ae11bb3e1451bea8699145c0074f89d9ce86ae912a83dc81",
+        "common/protocol-parameters/preprod-conway-v10.json": "41938b54874101b6bf62d2dad6a0b98eadcbce70924987e8cfe885501898cb20",
+        "common/protocol-parameters/preprod-conway-v9-zero-cost-models.json": "c90a092471d571dfa3f1b5688b100aafe7616f296b841c9a3c8df14c8b75ec1f"
+      }
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:31f7b846bfe3a26965b12343250be449102936b7b14b97f25206e36fcc34886b",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions"
+  },
+  "timings_seconds": {
+    "build": 448.9,
+    "fetch": 2.0,
+    "run": 4.2
+  },
+  "started_at": "2026-11-24T20:21:26Z",
+  "finished_at": "2026-11-24T20:21:33Z",
+  "validation": {
+    "schema": "scenarios/ledger-rules/schema.json",
+    "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 368,
+    "valid": true
+  },
+  "report": "scarab-20261124-ledger-rules.json.gz",
+  "sha256": "7238fa6668c1047442f1acddbbac335bdd7bf4a291718049c5e08af7e8dd8bf9",
+  "bytes": 2399,
+  "json_sha256": "b8612e07294187d0d74e2d22c93386b34be323123b25197f8aa56ae2d52450b3",
+  "generated_at": "2026-11-24T20:21:32.958381Z"
+}

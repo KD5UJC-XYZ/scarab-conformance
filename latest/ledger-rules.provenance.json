@@ -4,21 +4,19 @@
   "era": null,
   "scarab": {
     "repository": "KD5UJC-XYZ/scarab",
-    "commit": "15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248",
+    "commit": "929f794a6c76d8c3082ab6e86d56ce3b3144c447",
     "dirty": false
   },
   "tool": {
     "main": "xyz.kd5ujc.scarab.ledger.LedgerRulesMain",
     "arguments": [
-      "/inputs/site-9dc68a750478/scenarios/ledger-rules/fixtures/scenarios",
+      "/inputs/site-628006278309/scenarios/ledger-rules/fixtures/scenarios",
       "/inputs/ledger-rules-documents-40ba995081b2",
       "/out/report.json",
       "--sidecar",
       "/out/sidecar.json",
       "--dataset-commit",
-      "40ba995081b2b066cab497eade9abfbc0e350970",
-      "--plutus-vm",
-      "scarab"
+      "40ba995081b2b066cab497eade9abfbc0e350970"
     ],
     "jvm": [
       "-Xss8m",
@@ -26,7 +24,6 @@
       "--enable-native-access=ALL-UNNAMED",
       "--sun-misc-unsafe-memory-access=allow"
     ],
-    "plutus_vm": "scarab",
     "exit_status": 0
   },
   "inputs": [
@@ -34,7 +31,7 @@
       "name": "site",
       "kind": "git",
       "repository": "pragma-org/node-diversity-conformance",
-      "commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+      "commit": "628006278309c02a1c3e49dce00e43595d925c2e",
       "paths": [
         "scenarios"
       ]
@@ -57,30 +54,30 @@
   ],
   "environment": {
     "image": "scarab-jdk:local",
-    "image_id": "sha256:e63eed6806fd795cd8b3d08caafcf30b4a17bcf5d495bc54c0be8310c03af294",
+    "image_id": "sha256:31f7b846bfe3a26965b12343250be449102936b7b14b97f25206e36fcc34886b",
     "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
     "docker": "28.0.4",
     "python": "3.12.3",
     "runner": "github-actions"
   },
   "timings_seconds": {
-    "build": 229.7,
-    "fetch": 2.7,
-    "run": 2.5
+    "build": 448.9,
+    "fetch": 2.0,
+    "run": 4.2
   },
-  "started_at": "2026-11-15T02:39:22Z",
-  "finished_at": "2026-11-15T02:39:27Z",
+  "started_at": "2026-11-24T20:21:26Z",
+  "finished_at": "2026-11-24T20:21:33Z",
   "validation": {
     "schema": "scenarios/ledger-rules/schema.json",
-    "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+    "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
     "schema_errors": 0,
     "checks": [],
     "entries": 368,
     "valid": true
   },
-  "report": "scarab-20261115-ledger-rules.json.gz",
-  "sha256": "a4694392891b43e2c1c1f5250a7f109c295fde5a74565e99039304ae603b2838",
+  "report": "scarab-20261124-ledger-rules.json.gz",
+  "sha256": "7238fa6668c1047442f1acddbbac335bdd7bf4a291718049c5e08af7e8dd8bf9",
   "bytes": 2399,
-  "json_sha256": "31370baf533734d31df6026a4d410e7a7c80b43840fd01b1c26fe61f51fabebc",
-  "generated_at": "2026-11-15T02:39:27.299210Z"
+  "json_sha256": "b8612e07294187d0d74e2d22c93386b34be323123b25197f8aa56ae2d52450b3",
+  "generated_at": "2026-11-24T20:21:32.958381Z"
 }

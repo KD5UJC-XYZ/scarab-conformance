@@ -14,7 +14,7 @@ also writes this file: do not edit it by hand. Scarab's Plutus evaluator is its 
 ## Results
 
 The scores of the reports in `latest/`, as pragma-org's [node-diversity-conformance](https://pragma-org.github.io/node-diversity-conformance/) site computes them by its
-rules at [`9dc68a750`](https://github.com/pragma-org/node-diversity-conformance/tree/9dc68a750478335755d057288cc8978c117d7ac4), computed again each time
+rules at [`628006278`](https://github.com/pragma-org/node-diversity-conformance/tree/628006278309c02a1c3e49dce00e43595d925c2e), computed again each time
 reports are published.
 The overall score is the mean of the ratios of the site's 4 scenarios; a scenario without a
 readable report counts zero.
@@ -47,6 +47,6 @@ Ratios are shown as the site shows them, cut to two decimals.
 |---|---|---|---|
 | [`cbor-decoding-conway`](latest/cbor-decoding-conway.json.gz) | 2026-11-24 | [`7abac10c7`](https://github.com/KD5UJC-XYZ/scarab/commit/7abac10c72e9beae82b9273a74466d826deb87f0) | `4cbdb4c831e0e567` |
 | [`cbor-decoding-dijkstra`](latest/cbor-decoding-dijkstra.json.gz) | 2026-11-24 | [`7abac10c7`](https://github.com/KD5UJC-XYZ/scarab/commit/7abac10c72e9beae82b9273a74466d826deb87f0) | `2432489d381e3a45` |
-| [`ledger-rules`](latest/ledger-rules.json.gz) | 2026-11-15 | [`15cb6528b`](https://github.com/KD5UJC-XYZ/scarab/commit/15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248) | `a4694392891b43e2` |
-| [`uplc-conformance`](latest/uplc-conformance.json.gz) | 2026-11-15 | [`15cb6528b`](https://github.com/KD5UJC-XYZ/scarab/commit/15cb6528b9fd9f4d78e8a1c2148f7a5bc599e248) | `d8137bc83de59eae` |
+| [`ledger-rules`](latest/ledger-rules.json.gz) | 2026-11-24 | [`929f794a6`](https://github.com/KD5UJC-XYZ/scarab/commit/929f794a6c76d8c3082ab6e86d56ce3b3144c447) | `7238fa6668c10474` |
+| [`uplc-conformance`](latest/uplc-conformance.json.gz) | 2026-11-24 | [`929f794a6`](https://github.com/KD5UJC-XYZ/scarab/commit/929f794a6c76d8c3082ab6e86d56ce3b3144c447) | `e9fd4cc8fa2082aa` |
 | [`uplc-turbo`](latest/uplc-turbo.json.gz) | 2026-11-15 | [`6ea35198b`](https://github.com/KD5UJC-XYZ/scarab/commit/6ea35198b29bb0bc291c5a68c6f923fcf8d6d0cd) | `6463013ac0134f0d` |
