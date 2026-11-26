@@ -4,7 +4,7 @@
   "era": null,
   "scarab": {
     "repository": "KD5UJC-XYZ/scarab",
-    "commit": "929f794a6c76d8c3082ab6e86d56ce3b3144c447",
+    "commit": "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
     "dirty": false
   },
   "tool": {
@@ -54,19 +54,29 @@
   ],
   "environment": {
     "image": "scarab-jdk:local",
-    "image_id": "sha256:31f7b846bfe3a26965b12343250be449102936b7b14b97f25206e36fcc34886b",
+    "image_id": "sha256:fadc4c1ac27feceb10ff739ddad26299e64a0acbb4cab0987916b5ca25e17adb",
     "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
     "docker": "28.0.4",
     "python": "3.12.3",
-    "runner": "github-actions"
+    "runner": "github-actions",
+    "cpu": {
+      "model": "AMD EPYC 7763 64-Core Processor",
+      "logical_cpus": 4,
+      "available_cpus": 3,
+      "quota_cpus": 3.0
+    },
+    "limits": {
+      "cpus": "3",
+      "memory": "8g"
+    }
   },
   "timings_seconds": {
-    "build": 448.9,
-    "fetch": 2.0,
-    "run": 4.2
+    "build": 475.8,
+    "fetch": 0.9,
+    "run": 5.4
   },
-  "started_at": "2026-11-24T20:21:26Z",
-  "finished_at": "2026-11-24T20:21:33Z",
+  "started_at": "2026-11-26T01:56:16Z",
+  "finished_at": "2026-11-26T01:56:22Z",
   "validation": {
     "schema": "scenarios/ledger-rules/schema.json",
     "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
@@ -75,9 +85,9 @@
     "entries": 368,
     "valid": true
   },
-  "report": "scarab-20261124-ledger-rules.json.gz",
-  "sha256": "7238fa6668c1047442f1acddbbac335bdd7bf4a291718049c5e08af7e8dd8bf9",
-  "bytes": 2399,
-  "json_sha256": "b8612e07294187d0d74e2d22c93386b34be323123b25197f8aa56ae2d52450b3",
-  "generated_at": "2026-11-24T20:21:32.958381Z"
+  "report": "scarab-20261126-ledger-rules.json.gz",
+  "sha256": "588ef6187c6195bcf0ea744268f010ca1584e70d52698c938f393ac2423bca4d",
+  "bytes": 2400,
+  "json_sha256": "e2b416b0be9289e6392c8c159742dd64d10e41f8f8b05966cc7bfcbd4c997dc3",
+  "generated_at": "2026-11-26T01:56:22.586444Z"
 }

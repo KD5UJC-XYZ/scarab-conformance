@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "scenario": "cbor-decoding",
+  "era": "dijkstra",
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.ledger.conformance.CborDatasetMain",
+    "arguments": [
+      "/inputs/cbor-dataset-ed6c49a4e273/dataset/dijkstra",
+      "dijkstra",
+      "ed6c49a4e273bb540a26c46d61c011974d0192f6",
+      "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
+      "/out/report-dijkstra.json"
+    ],
+    "jvm": [
+      "-Xss8m",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "cbor-dataset",
+      "kind": "git",
+      "repository": "r2rationality/cardano-cbor-dataset",
+      "commit": "ed6c49a4e273bb540a26c46d61c011974d0192f6",
+      "paths": [
+        "dataset/conway",
+        "dataset/dijkstra",
+        "dataset/normalization"
+      ]
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:fadc4c1ac27feceb10ff739ddad26299e64a0acbb4cab0987916b5ca25e17adb",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions",
+    "cpu": {
+      "model": "AMD EPYC 7763 64-Core Processor",
+      "logical_cpus": 4,
+      "available_cpus": 3,
+      "quota_cpus": 3.0
+    },
+    "limits": {
+      "cpus": "3",
+      "memory": "8g"
+    }
+  },
+  "timings_seconds": {
+    "build": 475.8,
+    "fetch": 27.6,
+    "run": 9.8
+  },
+  "started_at": "2026-11-26T01:56:29Z",
+  "finished_at": "2026-11-26T01:57:23Z",
+  "validation": {
+    "schema": "scenarios/cbor-decoding/schema.json",
+    "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 40437,
+    "valid": true
+  },
+  "report": "scarab-20261126-cbor-decoding-dijkstra.json.gz",
+  "sha256": "99fda71ccadcb815e447c07cbe7ae6e57f3be71335ac4b157561709dbb492b14",
+  "bytes": 534705,
+  "json_sha256": "7646b919e7c8fe5c4468867ecf07865b1b89a97bf56444d0ad1a7d3f39426690",
+  "generated_at": 1795658243130
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "scenario": "uplc-conformance",
+  "era": null,
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.plutus.ndc.UplcConformanceMain",
+    "arguments": [
+      "/inputs/uplc-conformance-corpus-8bd4ad4f9f4c",
+      "/inputs/site-628006278309/scenarios/uplc-conformance/expectations.json",
+      "/out/report.json"
+    ],
+    "jvm": [
+      "-Xss8m",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "uplc-conformance-corpus",
+      "kind": "tarball",
+      "url": "https://pub-2239d82d9a074482b2eb2c886191cb4e.r2.dev/uplc-conformance.tar.zst",
+      "sha256": "8bd4ad4f9f4c8c6b8ffa1f06ed1db0b43043afbba77ef6a14bcfb5a52345ed3f"
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:fadc4c1ac27feceb10ff739ddad26299e64a0acbb4cab0987916b5ca25e17adb",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions",
+    "cpu": {
+      "model": "AMD EPYC 7763 64-Core Processor",
+      "logical_cpus": 4,
+      "available_cpus": 3,
+      "quota_cpus": 3.0
+    },
+    "limits": {
+      "cpus": "3",
+      "memory": "8g"
+    }
+  },
+  "timings_seconds": {
+    "build": 475.8,
+    "fetch": 2.0,
+    "run": 4.4
+  },
+  "started_at": "2026-11-26T01:56:22Z",
+  "finished_at": "2026-11-26T01:56:29Z",
+  "validation": {
+    "schema": "scenarios/uplc-conformance/schema.json",
+    "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 1064,
+    "valid": true
+  },
+  "report": "scarab-20261126-uplc-conformance.json.gz",
+  "sha256": "c1e3cd0cac0e7c088a2bdb2a26cbcd0567d903d196272e52d5ee74fcd997d2a8",
+  "bytes": 23249,
+  "json_sha256": "7d38d4c61595fa362944a775668b63627c99b31359244a94564e9cc6ca7dc559",
+  "generated_at": "2026-11-26T01:56:29.301673Z"
+}

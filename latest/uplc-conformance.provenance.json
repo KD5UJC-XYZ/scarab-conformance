@@ -4,7 +4,7 @@
   "era": null,
   "scarab": {
     "repository": "KD5UJC-XYZ/scarab",
-    "commit": "929f794a6c76d8c3082ab6e86d56ce3b3144c447",
+    "commit": "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
     "dirty": false
   },
   "tool": {
@@ -41,19 +41,29 @@
   ],
   "environment": {
     "image": "scarab-jdk:local",
-    "image_id": "sha256:31f7b846bfe3a26965b12343250be449102936b7b14b97f25206e36fcc34886b",
+    "image_id": "sha256:fadc4c1ac27feceb10ff739ddad26299e64a0acbb4cab0987916b5ca25e17adb",
     "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
     "docker": "28.0.4",
     "python": "3.12.3",
-    "runner": "github-actions"
+    "runner": "github-actions",
+    "cpu": {
+      "model": "AMD EPYC 7763 64-Core Processor",
+      "logical_cpus": 4,
+      "available_cpus": 3,
+      "quota_cpus": 3.0
+    },
+    "limits": {
+      "cpus": "3",
+      "memory": "8g"
+    }
   },
   "timings_seconds": {
-    "build": 448.9,
-    "fetch": 1.5,
-    "run": 4.1
+    "build": 475.8,
+    "fetch": 2.0,
+    "run": 4.4
   },
-  "started_at": "2026-11-24T20:21:33Z",
-  "finished_at": "2026-11-24T20:21:38Z",
+  "started_at": "2026-11-26T01:56:22Z",
+  "finished_at": "2026-11-26T01:56:29Z",
   "validation": {
     "schema": "scenarios/uplc-conformance/schema.json",
     "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
@@ -62,9 +72,9 @@
     "entries": 1064,
     "valid": true
   },
-  "report": "scarab-20261124-uplc-conformance.json.gz",
-  "sha256": "e9fd4cc8fa2082aaa1a03de296faa7165c7bb0ab027fe0d0c399899a177e6925",
+  "report": "scarab-20261126-uplc-conformance.json.gz",
+  "sha256": "c1e3cd0cac0e7c088a2bdb2a26cbcd0567d903d196272e52d5ee74fcd997d2a8",
   "bytes": 23249,
-  "json_sha256": "f2fa15589dab45515832bbc5f430197606efcddce1b868a5300a820f0d777669",
-  "generated_at": "2026-11-24T20:21:38.577552Z"
+  "json_sha256": "7d38d4c61595fa362944a775668b63627c99b31359244a94564e9cc6ca7dc559",
+  "generated_at": "2026-11-26T01:56:29.301673Z"
 }

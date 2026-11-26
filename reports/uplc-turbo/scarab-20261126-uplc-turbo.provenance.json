@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "scenario": "uplc-turbo",
+  "era": null,
+  "scarab": {
+    "repository": "KD5UJC-XYZ/scarab",
+    "commit": "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
+    "dirty": false
+  },
+  "tool": {
+    "main": "xyz.kd5ujc.scarab.plutus.ndc.UplcTurboMain",
+    "arguments": [
+      "/inputs/uplc-turbo-corpus-821af55e3323",
+      "/out/report.json"
+    ],
+    "jvm": [
+      "-Xms4g",
+      "-Xmx4g",
+      "--enable-native-access=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow"
+    ],
+    "exit_status": 0
+  },
+  "inputs": [
+    {
+      "name": "site",
+      "kind": "git",
+      "repository": "pragma-org/node-diversity-conformance",
+      "commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+      "paths": [
+        "scenarios"
+      ]
+    },
+    {
+      "name": "uplc-turbo-corpus",
+      "kind": "tarball",
+      "url": "https://pub-2239d82d9a074482b2eb2c886191cb4e.r2.dev/turbo.tar.zst",
+      "sha256": "821af55e3323c826b5598c964d634b46dd468014834d0e97ebdc5edb0a158576"
+    }
+  ],
+  "environment": {
+    "image": "scarab-jdk:local",
+    "image_id": "sha256:0b48898aa224f58b862b89e08077367204d4835ed3bef257fd7b75fc0e8c4d41",
+    "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
+    "docker": "28.0.4",
+    "python": "3.12.3",
+    "runner": "github-actions",
+    "cpu": {
+      "model": "Intel(R) Xeon(R) 6975P-C",
+      "logical_cpus": 4,
+      "available_cpus": 3,
+      "quota_cpus": 3.0
+    },
+    "limits": {
+      "cpus": "3",
+      "memory": "8g"
+    }
+  },
+  "timings_seconds": {
+    "build": 351.0,
+    "fetch": 1.8,
+    "run": 91.3
+  },
+  "started_at": "2026-11-26T01:54:21Z",
+  "finished_at": "2026-11-26T01:55:55Z",
+  "validation": {
+    "schema": "scenarios/uplc-turbo/schema.json",
+    "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
+    "schema_errors": 0,
+    "checks": [],
+    "entries": 3997,
+    "valid": true
+  },
+  "report": "scarab-20261126-uplc-turbo.json.gz",
+  "sha256": "15f8ea96f51523ecc92c70900b33ed760d9d54c770404efc232edb9f5a027dc6",
+  "bytes": 340346,
+  "json_sha256": "af454590d02e54892e5089c0f7bf6d0ff0e5da83154887909cbd4c71ef8dd97e",
+  "generated_at": "2026-11-26T01:55:54.885253Z"
+}

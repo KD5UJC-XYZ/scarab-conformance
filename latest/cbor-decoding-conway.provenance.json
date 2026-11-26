@@ -4,7 +4,7 @@
   "era": "conway",
   "scarab": {
     "repository": "KD5UJC-XYZ/scarab",
-    "commit": "7abac10c72e9beae82b9273a74466d826deb87f0",
+    "commit": "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
     "dirty": false
   },
   "tool": {
@@ -13,7 +13,7 @@
       "/inputs/cbor-dataset-ed6c49a4e273/dataset/conway",
       "conway",
       "ed6c49a4e273bb540a26c46d61c011974d0192f6",
-      "7abac10c72e9beae82b9273a74466d826deb87f0",
+      "5adbb7e9594f67bf29aea69a07b8d19346d5addd",
       "/out/report-conway.json"
     ],
     "jvm": [
@@ -29,7 +29,7 @@
       "name": "site",
       "kind": "git",
       "repository": "pragma-org/node-diversity-conformance",
-      "commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+      "commit": "628006278309c02a1c3e49dce00e43595d925c2e",
       "paths": [
         "scenarios"
       ]
@@ -48,30 +48,40 @@
   ],
   "environment": {
     "image": "scarab-jdk:local",
-    "image_id": "sha256:82c6874de7ad69391b6bb8f5cd76bf7d43094980e9f33eacbdbfb570ba675860",
+    "image_id": "sha256:fadc4c1ac27feceb10ff739ddad26299e64a0acbb4cab0987916b5ca25e17adb",
     "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS",
     "docker": "28.0.4",
     "python": "3.12.3",
-    "runner": "github-actions"
+    "runner": "github-actions",
+    "cpu": {
+      "model": "AMD EPYC 7763 64-Core Processor",
+      "logical_cpus": 4,
+      "available_cpus": 3,
+      "quota_cpus": 3.0
+    },
+    "limits": {
+      "cpus": "3",
+      "memory": "8g"
+    }
   },
   "timings_seconds": {
-    "build": 323.5,
-    "fetch": 20.0,
-    "run": 10.7
+    "build": 475.8,
+    "fetch": 27.6,
+    "run": 13.5
   },
-  "started_at": "2026-11-24T16:07:50Z",
-  "finished_at": "2026-11-24T16:08:21Z",
+  "started_at": "2026-11-26T01:56:29Z",
+  "finished_at": "2026-11-26T01:57:10Z",
   "validation": {
     "schema": "scenarios/cbor-decoding/schema.json",
-    "site_commit": "9dc68a750478335755d057288cc8978c117d7ac4",
+    "site_commit": "628006278309c02a1c3e49dce00e43595d925c2e",
     "schema_errors": 0,
     "checks": [],
     "entries": 43434,
     "valid": true
   },
-  "report": "scarab-20261124-cbor-decoding-conway.json.gz",
-  "sha256": "4cbdb4c831e0e5672aa09fe7ceaefa11816ed582ce1b3513bcd255e644818698",
-  "bytes": 575059,
-  "json_sha256": "367725047378768fb0985c6d9fe37f4bfce2f1c2139589baaefbd520297f5ede",
-  "generated_at": 1795536501056
+  "report": "scarab-20261126-cbor-decoding-conway.json.gz",
+  "sha256": "77d79ca1dfc5b510ee5c19bb9c7c385802c0b2654f56c6b20ecd5b20ad876c30",
+  "bytes": 575061,
+  "json_sha256": "7b6ad4ab56cba97db58920c678c2c4cd1465c388e631d9137a38c7efd8662978",
+  "generated_at": 1795658230205
 }
